@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>取博你一笑</title>
+<!-- 移动应用程序 -->
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widdth=device-width,initial-scale=1.0">
+    <title>开闭馆时间</title>
+<!---->
+<script src="js/echarts.min.js"></script>
+<script src="js/"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tutelage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //移动应用程序 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<script src="js/modernizr.custom.js"></script>
+<!-- fonts -->
+<link href='#css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='#css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+
+		
+
+</head>
+<style>
+	#main,
+	html,
+	body{
+	  width:100%;
+	}
+	#main{
+	  height:400px;
+	}
+  </style>
+  
+<body>
+<!-- 导航栏 -->
+<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- 标志和开关组合在一起，以实现更好的移动显示- -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <h1><a class="navbar-brand" href="首页.html"><i class="glyphicon glyphicon-education" aria-hidden="true"></i><span>国家</span>一级博物馆</a></h1>
+					</div>
+					<!-- 收集导航链接、表单和其他内容以进行切换 -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+              <li><a class="hvr-overline-from-center button2" href="index.html">首页</a></li>
+							<li><a class="hvr-overline-from-center button2 " href="中国地图.html">中国地图</a></li>
+							<li><a class="hvr-overline-from-center button2" href="占地面积.html">占地面积</a></li>
+							
+							<li><a class="hvr-overline-from-center button2" href="四川博物馆.html">四川博物馆</a></li>
+							<li><a class="hvr-overline-from-center button2 active" href="开闭馆时间.html">开闭馆时间</a></li>
+						
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="搜索..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+					</div><!-- /导航条塌陷 -->
+					
+					<!-- 搜索栏 -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- //搜索栏 -->
+				</nav>
+			</div>
+		</div>
+</div>
+
+<div class="banner page-head">
+</div>
+<!-- 第五部分图表 -->
+<body>
+	<div id="main" style="height: 600px;background-color: antiquewhite;"></div>
+	<script type="text/javascript">
+	   // 基于准备好的dom，初始化echarts实例
+	   var myChart = echarts.init(document.getElementById('main'));
+	   
+  // 指定图表的配置项和数据
+  var option = {
+    
+  series: {
+    type: 'sankey',
+    layout: 'none',
+    emphasis: {
+      focus: 'adjacency'
+    },
+    data: [
+       {
+        name: '朱德同志故居纪念馆'
+      },
+        {
+        name: '邓小平故居陈列馆'
+      },
+      {
+        name: '自贡市盐业历史博物馆'
+      },
+       {
+        name: '广汉三星堆博物馆'
+      },
+      {
+        name: '自贡恐龙博物馆'
+      },
+      
+      {
+        name: '四川省博物馆'
+      },
+      
+      
+       {
+        name: '8点半开馆'
+      },
+       {
+        name: '9点开馆'
+      },
+      
+       {
+        name: '16点闭馆'
+      },
+       {
+        name: '17点半闭馆'
+      },
+       {
+        name: '17点闭馆'
+      },
+      
+      {
+        name: '18点闭馆'
+      },
+      {
+        name: '20点半闭馆'
+      },
+      
+      {
+        name: '四川省建川博物馆'
+      },
+       {
+        name: '成都武侯祠博物馆'
+      },
+       {
+        name: '成都杜甫草堂博物馆'
+      },
+       {
+        name: '成都金沙遗址博物馆'
+      },
+       {
+        name: '成都博物馆'
+      },
+       {
+        name: '5.12汶川特大地震纪念馆'
+      },
+    
+    ],
+    links: [
+        {
+        source: '广汉三星堆博物馆',
+        target: '8点半开馆',
+        value: 1
+      },
+      {
+        source: '自贡恐龙博物馆',
+        target: '8点半开馆',
+        value: 1
+      },
+       {
+        source: '成都武侯祠博物馆',
+        target: '9点开馆',
+        value: 1
+      },
+       {
+        source: '成都杜甫草堂博物馆',
+        target: '9点开馆',
+        value: 1
+      },
+      {
+        source: '成都金沙遗址博物馆',
+        target: '9点开馆',
+        value: 1
+      },
+      {
+        source: '成都博物馆',
+        target: '9点开馆',
+        value: 1
+      },
+      
+      {
+        source: '5.12汶川特大地震纪念馆',
+        target: '9点开馆',
+        value: 1
+      },
+    
+      {
+        source: '邓小平故居陈列馆',
+        target: '8点半开馆',
+        value: 1
+      },
+      {
+        source: '四川省建川博物馆',
+        target: '9点开馆',
+        value: 1
+      },
+          {
+        source: '朱德同志故居纪念馆',
+        target: '8点半开馆',
+        value: 1
+      },
+      {
+        source: '自贡市盐业历史博物馆',
+        target: '8点半开馆',
+        value: 1
+      },
+      {
+        source: '四川省博物馆',
+        target: '9点开馆',
+        value: 1
+      },
+       {
+        source: '8点半开馆',
+        target: '17点闭馆',
+        value: 1
+      },
+       {
+        source: '8点半开馆',
+        target: '17点半闭馆',
+        value: 1
+      },
+      
+      {
+        source: '8点半开馆',
+        target: '16点闭馆',
+        value: 1
+      },
+      {
+        source: '9点开馆',
+        target: '17点半闭馆',
+        value: 2
+      },
+     
+      {
+        source: '9点开馆',
+        target: '20点半闭馆',
+        value: 1
+      },
+      {
+        source: '9点开馆',
+        target: '17点闭馆',
+        value: 1
+      },
+      {
+        source: '8点半开馆',
+        target: '18点闭馆',
+        value: 2
+      },
+       {
+        source: '9点开馆',
+        target: '18点闭馆',
+        value: 3
+      },
+    ]
+  }
+};
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+  window.onresize=function(){
+  myChart.resize();
+  }
+	</script>
+	</body>
+<!-- //contact-page -->
+<!-- footer -->
+<div class="footer">
+	<div class="container">
+		
+		<a></p>
+	</div>
+</div>
+<!-- //footer -->
+
+	<script src="js/bootstrap.js"></script>
+
+<!-- 返回小按钮 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //返回小按钮 -->
+
+</body>
+</html>

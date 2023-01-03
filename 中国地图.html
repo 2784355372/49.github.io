@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>取博你一笑</title>
+<!-- 移动应用程序 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tutelage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //移动应用程序 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/swipebox.css">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<script src="js/modernizr.custom.js"></script>
+<!-- fonts -->
+<link href='#css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='#css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+		<script src="js/echarts.min.js"></script>
+		<script src = "js/china.js"></script>
+		<script src = "js/vintage.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+
+</head>
+<body>
+<!-- 导航栏 -->
+<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- 标志和开关组合在一起，以实现更好的移动显示-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <h1><a class="navbar-brand" href="首页.html"><i class="glyphicon glyphicon-education" aria-hidden="true"></i><span>国家</span>一级博物馆</a></h1>
+					</div>
+					<!-- 收集导航链接、表单和其他内容以进行切换 -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a class="hvr-overline-from-center button2" href="index.html">首页</a></li>
+							<li><a class="hvr-overline-from-center button2 active" href="中国地图.html">中国地图</a></li>
+							<li><a class="hvr-overline-from-center button2" href="占地面积.html">占地面积</a></li>
+							
+							<li><a class="hvr-overline-from-center button2" href="四川博物馆.html">四川博物馆</a></li>
+							<li><a class="hvr-overline-from-center button2" href="开闭馆时间.html">开闭馆时间</a></li>
+						
+						</ul>
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="搜索..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+					</div><!-- /导航条塌陷 -->
+					
+					<!-- 搜索栏 -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- //搜索栏-->
+				</nav>
+			</div>
+		</div>
+</div>
+<!-- 背景-->
+<div class="banner page-head">
+	<div class="container">
+		<script src="js/responsiveslides.min.js"></script>
+			<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: true,
+										nav: false,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+								</script>
+
+			
+	</div>
+</div>
+<!-- 第二部分1地图-->
+<div id="main" style="height:600px;background-color: antiquewhite;">
+
+<script type="text/javascript">
+	// 基于准备好的dom，初始化echarts实例
+	var myChart = echarts.init(document.getElementById('main'));
+
+	// 指定图表的配置项和数据
+	var name_title = "中国各省一级博物馆（中国地图）"
+	
+	var mapName = 'china'
+	var data = [
+	//{ name: '湖北', value:4586 },
+	{ name: '湖北', value: 9 },
+	{ name: '浙江', value: 13},
+	{ name: '广东', value: 10 },
+	{ name: '湖南', value: 6 },
+	{ name: '河南', value: 9 },
+	{ name: '江西', value: 11 },
+	{ name: '安徽', value: 6 },
+	{ name: '重庆', value: 5 },
+	{ name: '山东', value: 18 },
+	{ name: '四川', value: 12 },
+	{ name: '江苏', value: 13 },
+	{ name: '上海', value: 7 },
+	{ name: '北京', value: 18 },
+	{ name: '福建', value: 5 },
+	{ name: '广西', value: 3 },
+	{ name: '河北', value: 3 },
+	{ name: '云南', value: 2 },
+	{ name: '陕西', value: 9 },
+	{ name: '黑龙江', value: 6 },
+	{ name: '海南', value: 2 },
+	{ name: '辽宁', value: 6 },
+	{ name: '山西', value: 6 },
+	{ name: '天津', value: 4 },
+	{ name: '甘肃', value: 4 },
+	{ name: '内蒙古', value: 3 },
+	{ name: '宁夏', value: 2 },
+	{ name: '吉林', value: 3 },
+	{ name: '新疆', value: 2 },
+	{ name: '贵州', value: 4 },
+	{ name: '香港', value: 0 },
+	{ name: '台湾', value: 0 },
+	{ name: '青海', value: 2 },
+	{ name: '澳门', value: 0 },
+	{ name: '西藏', value: 1 },
+
+	];
+	
+	var option = {
+		title: {
+			text: name_title,
+			x: 'center',
+			textStyle: {
+				fontSize: 24
+			},                
+		},
+		
+		tooltip: {
+			trigger: 'item',
+			formatter: function(params) {                        
+					var toolTiphtml = ''
+					if (isNaN(params.value)){
+					toolTiphtml = params.name + '一级博物馆: 0家'
+					}else{
+					toolTiphtml = params.name + '一级博物馆: ' + params.value + '家'
+					}
+					//console.log(toolTiphtml)                        
+					return toolTiphtml;                   
+			}
+		},
+		toolbox: {
+			feature: {
+				saveAsImage: {}
+			}
+		},
+		visualMap: {
+			show: true,
+			left: 'left',
+			top: 'bottom',
+			seriesIndex: [0],
+			type:'piecewise',
+			pieces:[
+				{min:12, color: 'rgb(254,57,101)'},
+				{min:10, max:12, color: 'rgb(252,157,154)'},
+				{min:7, max:9, color: 'rgb(249,205,173)'},
+				{min:4, max:6, color: 'rgb(200,200,169)'},
+				{min:1, max:3, color: 'rgb(131,175,155)'},
+				{max:1, color: 'rgb(220,208,255)'},
+			],            
+			textStyle: {
+				color: '#000000'
+			}
+		},            
+		geo: {
+			show: true,
+			map: mapName,
+			label: {
+				normal: {
+					show: true,
+					fontSize:12,
+				},
+				emphasis: {
+					show: false,
+				}
+			},
+			roam: false,
+			itemStyle: {
+				normal: {
+					areaColor: '#FFFFFF',
+					borderColor: '#666666',
+				},
+				emphasis: {
+					areaColor: '#0099CC',
+				}
+			}
+		},
+		series: [
+			{
+				type: 'map',
+				map: mapName,
+				geoIndex: 0,           
+				animation: false,
+				data: data
+			},
+			
+		]
+	};
+
+	// 使用刚指定的配置项和数据显示图表。
+	myChart.setOption(option);
+	window.onresize=function(){
+myChart.resize();
+}
+</script>
+</div>
+<!-- 第二部分2解说 -->
+<div class="features" style="background-color:honeydew;">
+	<div class="container">
+		<h3 class="tittle">国家一级博物馆介绍</h3> 
+		<div class="col-md-5 features-left">
+			<img src="images/国家一级博物馆.jpeg" alt=""/>
+		</div>
+		<div class="col-md-7 features-right">
+			<h4>简要</h4>
+				<p>国家一级博物馆，是中国国家文物局为加强博物馆行业管理，
+					充分发挥博物馆的社会服务功能，对中华人民共和国境内所有
+					正式登记、注册并接受年检，具有文物、标本收藏保管、科学
+					研究、陈列展览功能的，对外开放的各类博物馆，经该国家局
+					组织设立的全国博物馆评估委员会在综合管理与基础设施、藏
+					品管理与科学研究、陈列展览与社会服务等各方面进行综合评
+					议，并以打分方式产生的博物馆最高等级划分。（现一共204家）</p>
+
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footer-grids">
+			
+		</div>
+		<p></p>
+	</div>
+</div>
+
+	<script src="js/bootstrap.js"></script>
+
+<!-- 返回小按钮 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- 返回小按钮 -->
+
+</body>
+</html>

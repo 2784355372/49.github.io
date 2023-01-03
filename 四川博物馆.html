@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>取博你一笑</title>
+<!-- 移动应用程序 -->
+<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widdth=device-width,initial-scale=1.0">
+    <title>四川博物馆</title>
+<!---->
+<script src="js/echarts.min.js"></script>
+<script src="js/"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tutelage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //移动应用程序 -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<script src="js/modernizr.custom.js"></script>
+<!-- fonts -->
+<link href='#css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='#css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+
+
+</head>
+<style>
+	#main,
+	html,
+	body{
+	  width:100%;
+	}
+	#main{
+	  height:400px;
+	}
+  </style>
+  
+<body>
+<!-- 导航栏 -->
+<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- 标志和开关组合在一起，以实现更好的移动显示- -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					    <h1><a class="navbar-brand" href="首页.html"><i class="glyphicon glyphicon-education" aria-hidden="true"></i><span>国家</span>一级博物馆</a></h1>
+					</div>
+					<!-- 收集导航链接、表单和其他内容以进行切换 -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a class="hvr-overline-from-center button2" href="index.html">首页</a></li>
+							<li><a class="hvr-overline-from-center button2 " href="中国地图.html">中国地图</a></li>
+							<li><a class="hvr-overline-from-center button2" href="占地面积.html">占地面积</a></li>
+							
+							<li><a class="hvr-overline-from-center button2 active" href="四川博物馆.html">四川博物馆</a></li>
+							<li><a class="hvr-overline-from-center button2 " href="开闭馆时间.html">开闭馆时间</a></li>
+							
+						<div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="搜索..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+					</div><!-- /导航条塌陷 -->
+					
+					<!-- 搜索栏 -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- //搜索栏 -->
+				</nav>
+			</div>
+		</div>
+</div>
+
+<div class="banner page-head">
+</div>
+<!-- 第四部分图表 -->
+<body>
+	<div id="main" style="height: 600px"></div>
+	<script type="text/javascript">
+	   // 基于准备好的dom，初始化echarts实例
+	   var myChart = echarts.init(document.getElementById('main'));
+	   
+  // 指定图表的配置项和数据
+  var option = {
+	title: {  
+	  text: '票价'
+	},
+	toolbox:{
+    show:true,
+    feature:{
+      dataView:{show:true,readOnly:false},
+magicType:{show:true,type:['line','bar']},
+restore:{show:true},
+saveAsImage:{show:true},
+dataZoom:{}
+
+    },
+    orient:'vertical',
+    itemSize:30,
+    iconStyle:{
+      color:'brown',
+      borderColor:'grayb'
+    },
+    emphasis:
+    {
+      iconStyle:{
+        textPosition:'right',
+        textFill:'gray',
+        textBackgroundColor:'pink',
+        textPadding:4
+      }
+    },
+top:'center',
+right:80,
+    
+  },  
+	tooltip: {
+	  trigger: 'axis',
+	  axisPointer: {
+		// Use axis to trigger tooltip
+		type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+	  }
+	},
+	legend: {},
+	grid: {
+	  left: '3%',
+	  right: '4%',
+	  bottom: '3%',
+	  containLabel: true
+	},
+	xAxis: {
+	  type: 'value'
+	},
+	yAxis: {
+	  type: 'category',
+	  data: ['自贡恐龙博物馆', '成都武侯祠博物馆', '成都杜甫草堂博物馆', '成都金沙遗址博物馆', '成都博物馆', '5.12汶川特大地震纪念馆', '广汉三星堆博物馆','邓小平故居陈列馆','四川省博物馆','自贡市盐业历史博物馆','四川省建川博物馆','朱德同志故居纪念馆']
+	},
+	series: [
+	  
+	  {
+		name: '学生票价',
+		type: 'bar',
+		stack: 'total',
+		label: {
+		  show: true
+		},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [20, 25, 25, 25, 35, 0, 0,36,0,0,17,50,0]
+	  },
+	  {
+		name: '全价票价',
+		type: 'bar',
+		stack: 'total',
+		label: {
+		  show: true
+		},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [40, 50, 50, 50, 70, 0, 0,,72,0,0,35,100,0]
+	  },
+	  {
+		name: '儿童，老人，残疾人和军人票价',
+		type: 'bar',
+		stack: 'total',
+		label: {
+		  show: true
+		},
+		emphasis: {
+		  focus: 'series'
+		},
+		data: [0, 0, 0, 0, 0, 0, 0,0,0,0, 25,0]
+	  },
+	  {
+	name: '年票',
+	type: 'bar',
+	stack: 'total',
+	label: {
+	  show: true
+	},
+	emphasis: {
+	  focus: 'series'
+	},
+	data: [0,100,0,0,0,0,0,0,0,0,0,0]
+  },
+	]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+  window.onresize=function(){
+  myChart.resize();
+  }
+	</script>
+	</body>
+<!-- 第四部分图片及网页超链接 -->
+	<div class="services-top">
+			<div class="container">
+				<div class="services-info">
+					<h3 class="tittle"></h3>
+				</div>
+				<div class="ser-top-grids">
+					<div class="col-md-8 ser-top-grid">
+						
+						
+				</div>
+			</div>
+	</div>
+	<div class="facilities">
+		<div class="container">
+			<h3 class="tittle">四川一级博物馆</h3> 	
+				<script src="js/jquery.swipebox.min.js"></script> 
+				
+					<div class="view view-seventh">
+						<a href="https://baike.baidu.com/item/%E5%9B%9B%E5%B7%9D%E7%9C%81%E5%8D%9A%E7%89%A9%E9%A6%86/1628327" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/四川省博物馆.jpg" alt="" >
+						<div class="mask">
+							<h4>四川省博物馆</h4>
+							<p>1941年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="https://www.jc-museum.cn/about/" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/四川省建川博物馆.jpg" alt="" >
+						<div class="mask">
+							<h4>四川省建川博物馆</h4>
+							<p>2005年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="http://www.banyuetan.org/chcontent/hswh/hsjs/
+						201744/224211.shtml" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/朱德同志故居博物馆.jpg" alt="" >
+						<div class="mask">
+							 <h4>朱德同志故居纪念馆</h4>
+							<p>1982年创建</p>
+							
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="https://sichuan.scol.com.cn/ggxw/202106/58178057.html" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/邓小平故居陈列馆.jpg" alt="">
+						<div class="mask">
+							 <h4>邓小平故居陈列馆</h4>
+							<p>2004年创建</p>
+							
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="https://www.sxd.cn/#/" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/广汉三星堆博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>广汉三星堆博物馆</h4>
+							<p>1997年创建</p>
+							
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="http://www.zdm.cn/introduceinfo.html"class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/自贡恐龙博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>自贡恐龙博物馆</h4>
+							<p>1987年创建</p>
+							
+							
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="https://baike.baidu.com/item/5%C2%B712%E6%B1%B6%
+						E5%B7%9D%E7%89%B9%E5%A4%A7%E5%9C%B0%E9%9C%87%E7%
+						BA%AA%E5%BF%B5%E9%A6%86/15421377" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/5.12汶川特大地震纪念馆.jpg" alt="">
+						<div class="mask">
+							<h4>5.12汶川特大地震纪念馆</h4>
+							<p>2008年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="https://cdmuseum.com/" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/成都博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>成都博物馆</h4>
+							<p>1958年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="http://www.wuhouci.net.cn/index.html" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/成都武侯祠博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>成都武侯祠博物馆</h4>
+							<p>1984年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="http://www.cddfct.com/info/show/id/17/Tpls/w5" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/成都杜甫草堂博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>成都杜甫草堂博物馆</h4>
+							<p>1955年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="http://www.jinshasitemuseum.com/" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/成都金沙遗址博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>成都金沙遗址博物馆</h4>
+							<p>2007年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="view view-seventh">
+						<a href="http://www.zgshm.cn/content2.jsp?id=c5bd4dc37b3b47de95177f496a109d07" class="b-link-stripe b-animate-go  swipebox"  title="点击前往官网"><img src="images/自贡盐业历史博物馆.jpg" alt="">
+						<div class="mask">
+							<h4>自贡盐业历史博物馆</h4>
+							<p>1959年创建</p>
+							
+						</div></a>
+					</div>
+					<div class="clearfix"></div>
+		</div>
+	</div>
+
+<div class="footer">
+	<div class="container">
+		
+	<p>2020110049彭益</p>
+	</div>
+</div>
+
+	<script src="js/bootstrap.js"></script>
+<!-- 返回小按钮 -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //返回小按钮 -->
+
+</body>
+</html>
+<script type="text/javascript">
+	jQuery(function($) {
+		$(".swipebox").swipebox();
+	});
+</script>
